@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Машинка</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: skyblue;
+}
+
+.road {
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+    position: relative;
+    overflow: hidden;
+}
+
+.car {
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    left: -200px;
+    top: 0;
+    border-radius: 10px;
+    animation: drive 5s forwards;
+}
+
+.car::before, .car::after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -10px;
+}
+
+.car::before {
+    left: 20px;
+}
+
+.car::after {
+    right: 20px;
+}
+
+@keyframes drive {
+    to {
+        left: calc(100% - 250px);
+    }
+}
+</style>
+<body>
+    <div class="road">
+        <div class="car"></div>
+    </div>
+</body>
+</html>

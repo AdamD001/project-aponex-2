@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <title>КТ 2</title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td><b><label>Название напитка</label></b></td>
+                <td><input type="text", placeholder="введите название", name="title", id="name"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <b><label>Сорт: </label></b>
+                </td>
+
+                <td>
+                    <label>
+                        <select name="sort">
+                            <option  value="" disabled ></option>
+                            <option value="Арабика">Арабика</option>
+                            <option value="Шарабика">Шарабика</option>
+                            <option value="Сарабика">Сарабика</option>
+                            <option value="не указано">Не указано</option>
+
+
+                        </select>
+                    </label>
+                </td>
+
+            </tr>
+
+
+            <tr>
+                
+                <td>
+                    <label><b>Крепкость обжарки: </b></label>
+                </td>
+
+                <td>
+                    <label>
+                        <input type="radio" name="strength" value="Легкий"> <b>Легкий</b>
+                    </label><br>
+
+                    <label>
+                        <input type="radio" name="strength" value="Средний"> <b>Средний</b>
+                    </label><br>
+
+
+                    <label>
+                        <input type="radio" name="strength" value="Крепкий"> <b>Крепкий</b>
+                    </label>
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <td>
+                    <label><b>Изображение: </b></label>
+                </td>
+
+
+                <td>
+                    <label>
+                        <input type="text", name="image", placeholder="укажите изображение">
+
+                    </label>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <label><b>Стоимост напитки: </b></label>
+                </td>
+
+                <td>
+                    <label>
+                        <input type="text", name="cost", placeholder="введите стоимость">
+                    </label>
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <td>
+                    <label><b>Описание: </b></label>
+                </td>
+
+
+                <td>
+                    <label>
+                       <textarea name="description"  style="width: 135x; height: 44px;"></textarea>
+                    </label>
+                </td>
+                <td></td>
+                
+                
+            </tr>
+
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Добавить напиток", name="submit"></td>
+        </tr>
+         
+        </table>
+    </form>
+
+    <br>
+    <table id="table", class="my">
+        <tr>
+            <th>Изображение</th>
+            <th>Название</th>
+            <th>Сорт</th>
+            <th>Крепкость обжарки</th>
+            <th>Стоимость</th>
+            <th>Описание</th>
+        </tr>
+
+        <tbody>
+
+        </tbody>
+    </table>
+    
+
+    <!-- <script data-src="https://queen-leksa.github.io/111/script.js"></script> -->
+
+</body>
+</html>
